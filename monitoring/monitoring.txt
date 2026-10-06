@@ -1,0 +1,2 @@
+date,file_name,rows_scored,model_version,pct_predicted_vulnerable,notes
+2026-05-01,test_set.csv,4075,rf_v1,0.64,baseline run from Task 2 test set

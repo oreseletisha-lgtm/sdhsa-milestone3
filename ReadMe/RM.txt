@@ -1,0 +1,10 @@
+## Task 4 additions
+
+| Date | Activity | Ethical consideration | Mitigation applied |
+|------|----------|-----------------------|--------------------|
+| Task 4 | Built Shiny deployment for RF classifier | Automated scoring could be misused as an eligibility decision | Permanent responsible-use banner; output labelled "decision support"; human review mandated |
+| Task 4 | CSV upload feature | Uploaded data may contain PII / household identifiers | Uploads processed in memory; no raw upload persisted; identifier column not displayed |
+| Task 4 | Model persistence (`final_model.rds`) | Model version drift if retrained silently | Model version logged with every scoring run; retraining is a documented, reviewed action |
+| Task 4 | Monitoring plan | Groups may be systematically under- or over-flagged | Per-province, per-geo-type and per-household-size Recall monitored; alert at >10 pp gap |
+| Task 4 | AI tool assistance | AI was used to help draft code and documentation | All AI assistance recorded here; outputs reviewed and verified by the team |
+| Task 4 | Retraining / retirement | Model may outlive its validity | Explicit retirement conditions documented in Section 4.5 of the report |
